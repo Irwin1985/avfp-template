@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="activevfp.dll" processorArchitecture="x86" version="1.0.3822.25700" type="win32" />
+  <file name="activevfp.dll" asmv2:size="169601">
+    <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fJ7kE7v1O5nl73zdEEvwIbMU28o=</dsig:DigestValue>
+    </hash>
+    <typelib tlbid="{ed1ecb89-1531-4579-b6a3-d8b622408517}" version="1.0" helpdir="" resourceid="0" flags="HASDISKIMAGE" />
+    <comClass clsid="{bef60ced-fb7c-4835-a927-4ec90f5162cb}" threadingModel="Apartment" tlbid="{ed1ecb89-1531-4579-b6a3-d8b622408517}" progid="ActiveVFP.server" description="activevfp.server" />
+    <comClass clsid="{88a77932-9307-4c41-ba9b-eea5be713510}" threadingModel="Apartment" tlbid="{ed1ecb89-1531-4579-b6a3-d8b622408517}" progid="ActiveVFP.c1" description="activevfp.c1" />
+    <comClass clsid="{659b84fb-6862-40a8-9d16-c0a2efe28a14}" threadingModel="Apartment" tlbid="{ed1ecb89-1531-4579-b6a3-d8b622408517}" progid="ActiveVFP.ThreadManager" description="activevfp.ThreadManager" />
+  </file>
+</assembly>

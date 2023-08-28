@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+<assemblyIdentity name="web" version="8.0.0.0" type="win32" processorArchitecture="x86"/>
+
+<description>Built with: Side-by-Side Manifest Maker (2.10.0.447)</description>
+<description>Copyright: 2004-2007 © Maze Computer Communications, Inc.  All rights reserved.</description>
+<description>Licensee: Maze Computer Communications, Inc., www.mazecomputer.com</description>
+<description>License: 5 users license</description>
+
+<dependency>
+ <dependentAssembly>
+  <assemblyIdentity name="activevfp.dll" version="1.0.3822.25700" type="win32" processorArchitecture="x86"/>
+ </dependentAssembly>
+</dependency>
+
+</assembly>

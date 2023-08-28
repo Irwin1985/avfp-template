@@ -1,0 +1,4 @@
+Hola Mundo desde ActiveVFP!<hr>
+Hora: <%=Transform(DateTime())%><br>
+<a href='clientes.avfp'>ver los clientes de la tabla cuenta</a><br> 
+Saludos a los foxeros de España!
