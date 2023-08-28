@@ -11,24 +11,52 @@ ActiveVFP es un marco de trabajo que permite el desarrollo de aplicaciones web u
 
 ## Estructura de Carpetas y Archivos
 
-- `bin/`: Esta carpeta contiene las bibliotecas y ejecutables necesarios para el funcionamiento de ActiveVFP.
-  - `activevfp_dotnetproxy.dll`: Un proxy que conecta ActiveVFP con componentes .NET.
-  - `App_Code.dll`: Biblioteca que contiene código de aplicación compilado, con clases y funciones compartidas.
-  - `AspManifestHelpers.dll`: Biblioteca que facilita la carga de bibliotecas .NET en IIS.
+- **activevfp.dll** y **activevfp.dll.manifest**: Estos archivos son módulos de ActiveVFP necesarios para su funcionamiento.
 
-- `html/`: Aquí se encuentra el archivo principal de tu aplicación ActiveVFP.
-  - `default.avfp`: Página principal de tu aplicación, donde puedes incluir lógica y marcado.
+- **/bin**
+  - **activevfp_dotnetproxy.dll**: Biblioteca que brinda capacidades .NET para ActiveVFP.
+  - **App_Code.dll**: Biblioteca que contiene código de aplicación compartido.
+  - **AspManifestHelpers.dll**: Biblioteca para ayudar con manifiestos ASP.
 
-- `prg/handlers/lib/`: Contiene scripts que proveen funciones auxiliares para manejar solicitudes REST.
-  - `resthelper.prg`: Script que ofrece funciones útiles para el manejo de solicitudes REST.
+- **/css**
+  - **jquery-ui-1.8.7.css**, **jquery-ui.css**, **jquery.mobile-1.0rc1.min.css**, **Site.css** y **styles.css**: Archivos CSS para el diseño y estilo del sitio.
+  - **Web.Config**: Archivo de configuración para estilos y CSS.
 
-- `prg/handlers/`: En esta carpeta se encuentra el controlador que maneja solicitudes REST.
-  - `resthandler.prg`: Controlador que gestiona las solicitudes REST, haciendo uso de `resthelper.prg` y otras funciones.
+- **/html**
+  - **default.avfp**: Plantilla HTML para la página principal del sitio.
 
-- `prg/rest/controllers/`: Aquí se colocan los controladores de la aplicación, encargados de manejar solicitudes REST específicas.
+- **/prg**
+  - **/handlers**
+    - **/lib**
+      - **resthelper.prg**: Manejador de REST para funciones auxiliares.
+    - **resthandler.prg**: Manejador principal de REST.
 
-- `prg/`: Esta carpeta contiene scripts y componentes generales de la aplicación.
-  - `main.prg`: Punto de entrada potencial para configurar el entorno y llamar a otros componentes.
+  - **/rest/controllers**
+    - **/jsondb**
+      - **configuration.json**: Configuración de base de datos JSON para REST.
+      - **examples.avfp**, **jsondb.avfp**, **reference.avfp**, **test.avfp**: Controladores JSON para REST.
+      - **jsondb.prg**: Controlador principal para manejar solicitudes JSON.
+
+  - **main.prg**: Archivo principal de inicio de la aplicación.
+  - **pages.prg**: Archivo que maneja las páginas y su contenido.
+  - **/plugins**
+    - **layouts.prg**: Plugin para administrar diseños de página.
+
+- **/reports**
+  - **clsheap.prg**, **print2pdf.prg**: Archivos relacionados con generación y manejo de informes.
+  - **runfrx.exe**: Ejecutable para generar informes.
+
+- **/javascript**: Archivos JavaScript para la funcionalidad del sitio.
+  - **jquery.js**, **jquery-ui.min.js**, **jquery.validate.min.js**, **ui.jqgrid.js**, entre otros.
+
+- **/data**
+  - **/newfeats**: Archivos de datos relacionados con nuevas características.
+
+- **/docs**: Documentación relacionada con el sitio y ActiveVFP.
+  - **docs.htm**, **IIS_Setup_in_10_steps!.htm**: Documentación HTML.
+
+- **/images**: Imágenes utilizadas en el diseño del sitio.
+  - Varias imágenes utilizadas en los archivos CSS y HTML.
 
 - Archivos en la raíz:
   - `activevfp.dll`: La biblioteca principal de ActiveVFP para ejecutar código Visual FoxPro en IIS.
