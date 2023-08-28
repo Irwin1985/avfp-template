@@ -76,6 +76,3 @@ Para asegurarte de que IIS funcione correctamente con ActiveVFP, sigue estos pas
 ---
 
 Esperamos que esta plantilla te ayude a configurar y ejecutar tus proyectos de ActiveVFP en IIS. Si tienes preguntas o necesitas ayuda, no dudes en contactarnos.
-
-[Enlace a la documentación de ActiveVFP](enlace-a-documentacion)
-[Enlace a recursos de IIS](enlace-a-recursos-iis)
