@@ -1,0 +1,33 @@
+<html>
+<body>
+      <h3>oProp.scriptPath: <%= oProp.scriptPath %></h3>
+      <h3>oProp.htmlPath: <%= oProp.htmlPath %></h3>
+      <h3>oAVFP.cRootPath: <%= oAVFP.cRootfolder%></h3>
+      <%
+      
+        LOCAL cPathInfo, cPathTranslated
+        cPathInfo = LOWER(CHRTRAN(oRequest.serverVariables("PATH_INFO"),"\","/"))
+        cPathTranslated = LOWER(CHRTRAN(oRequest.serverVariables("PATH_TRANSLATED"),"\","/"))
+        
+        LOCAL cRootFolder, cBaseUrl, i, cPath, j
+        cRootFolder = ""
+        cBaseUrl = ""
+        FOR i = 1 TO OCCURS("/",cPathInfo)
+         cPath = SUBSTR(cPathInfo, AT("/", cPathInfo, i))
+         j = AT(cPath, cPathTranslated)
+         IF j > 0
+          cRootFolder = LEFT(cPathTranslated, j - 1)
+          cBaseUrl = LEFT(cPathInfo, AT(cPAth, cPathInfo) - 1)
+          EXIT
+         ENDIF
+        ENDFOR
+        
+     
+      %>
+      
+      <h3>ROOT: <%=cRootFolder%></h3>
+      <h3>HOME: <%=cBaseURL%></h3>
+      <h3>oAVFP: <%=oAVFP.cRootFolder%></h3>
+      
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+   "configured" : true,
+   "connectiontype" : "dbf",
+   "dbffolder" : "e:/core/dev/web/avfp/6.03/bin/prg/rest/controllers/",
+   "homefolder" : "e:/core/dev/web/avfp/6.03/bin/prg/rest/controllers/",
+   "odbcconnstring" : null
+}

@@ -1,0 +1,66 @@
+<lp:layout Source="bootstrap.avfp" pageTitle="Welcome to JsonDB">
+
+  <lp:content name="links">
+   <style>
+   .info-column {
+      padding: 10px;
+      height: 400px;
+   }
+   </style>
+  </lp:content>
+  
+  <lp:content Name="body">
+       <div class="row">
+       <div class="col-md-1">&nbsp;</div>   
+       <div class="jumbotron col-md-10">
+         <h1>Welcome to JsonDB!</h1>
+         <p>JsonDB is a <a href="https://en.wikipedia.org/wiki/REST">REST webservice</a> for <a href="www.activevfp.com">ActiveVFP</a> that allows easy
+          <a href="https://en.wikipedia.org/wiki/CRUD">CRUD</a> operations using <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> data.</p>
+          <br>
+          <a href="@home@/jsondb/examples" class="btn btn-primary btn-lg" role="button">View code examples</a>&nbsp;
+          <a href="@home@/jsondb/reference" class="btn btn-primary btn-lg" role="button">View documentation</a>
+       </div>        
+       <div class="col-md-1">&nbsp;</div>   
+       </div>
+
+     
+      <div class="row">
+     
+        <div class="col-md-1">&nbsp;</div>   
+        <div class="col-md-3">
+            <h3>How it works</h3>
+            <p>JsonDB REST webservice recive JSON data using a POST request, allong with
+            the action to be performed (save data, retrieve data, delete data) and the
+            <em>repository</em> where this data is located.</p>
+            <p>A repository is a data table specially designed to store a certain type
+            of JSON object.  This table can already exists in your database or be created
+            using a special JsonDB action.</p>
+            <p>You <strong>don't need</strong> to create a separate REST controller for each
+            kind of data you want to use in your app (customers, items, invoices). Instead, 
+            you can use only JsonDB to access and update <strong>ALL</strong> your data.</p>
+        </div>
+        
+        <div class="col-md-4">
+            <h3>Use your favorite RDBMS</h3>
+            <p>JsonDB can work not only with DBF files, but with <a href="http://en.wikipedia.org/wiki/Microsoft_SQL_Server">SQL Server</a> and 
+            <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> databases as well, using the same easy interface.</p>
+            <p>Using JsonDB to handle your data will allow you to scale your webapp from DBF files to a more
+            robust RDBMS without needing any change on you current code.</p>
+        </div>
+ 
+        <div class="col-md-3">
+            <h3>Access your data everywhere</h3>
+            <p>JsonDB includes not only a JavaScript client to access your data from within
+            your webapp browser-side code, but from your server-side VFP code and even
+            from your VFP desktop app!!</p>
+            Using the JsonDB VFP client class you can easily create VFP desktop apps that
+            read and update data directly from your ActiveVFP web server, easier and 
+            <string>faster</strong> than traditional ODBC clients.</p>
+        </div>        
+        
+        <div class="col-md-1">&nbsp;</div>   
+      </div>    
+    </div>
+  </lp:content>
+
+</lp:layout>

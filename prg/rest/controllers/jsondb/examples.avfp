@@ -1,0 +1,19 @@
+<lp:layout Source="bootstrap.avfp" pageTitle="Welcome to JsonDB">
+
+  <lp:content name="links">
+   <style>
+   .info-column {
+      padding: 10px;
+      height: 400px;
+   }
+   </style>
+  </lp:content>
+  
+  <lp:content Name="body">
+    <h2>JsonDB Code Examples</h2>
+    <a href="@root@/jsondb" class="btn btn-primary" role="button">Go Back</a>
+    <br>
+    <br>
+  </lp:content>
+
+</lp:layout>

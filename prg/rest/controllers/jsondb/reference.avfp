@@ -1,0 +1,144 @@
+<lp:layout Source="bootstrap.avfp" pageTitle="Welcome to JsonDB">
+
+  <lp:content name="links">
+   <style>
+   .info-column {
+      padding: 10px;
+      height: 400px;
+   }
+   </style>
+  </lp:content>
+  
+  <lp:content Name="body">
+  
+    <div class="row">
+      <div class="col-md-1">&nbsp;</div>
+      <div class="col-md-10">
+        <h2>JsonDB Reference</h2>
+        <a href="@home@/jsondb" class="btn btn-primary" role="button">Go Back</a>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>  
+      <div class="col-md-1">&nbsp;</div>      
+    </div>  
+    
+    <div class="row">
+      
+      <div class="col-md-1">&nbsp;</div>
+
+      <!-- Section selector -->
+      <div class="col-md-2 well">
+
+        <ul class="nav nav-pills nav-stacked" id="index">
+
+         <!-- SERVICE ACTIONS -->
+	     <li class="disabled"><a href="#"><strong>Service actions</strong></a></li>
+         <li><a href="#tab_a1" data-toggle="pill" id="configure">configure</a></li>
+         <li><a href="#tab_a2" data-toggle="pill" id="configuration">configuration</a></li>
+
+         <!-- REPOSITORY ACTIONS -->
+	     <li class="disabled"><a href="#"><strong>Repository actions</strong></a></li>
+         <li><a href="#tab_b1" data-toggle="pill"id="create">create</a></li>
+         <li><a href="#tab_b2" data-toggle="pill" id="info">info</a></li>
+         <li><a href="#tab_b3" data-toggle="pill" id="list">list</a></li>
+         <li><a href="#tab_b4" data-toggle="pill" id="list">drop</a></li>	         
+      
+         <!-- DATA ACTIONS -->
+	     <li class="disabled"><a href="#"><strong>Data actions</strong></a></li>         
+         <li class="active"><a href="#tab_c1" data-toggle="pill" id="save">save</a></li>
+         <li><a href="#tab_c2" data-toggle="pill" id="retrieve">retrieve</a></li>
+         <li><a href="#tab_c3" data-toggle="pill" id="delete">delete</a></li>
+        </ul>
+	    
+	    
+      </div>
+      
+        
+      <!-- View port -->
+      <div class="col-md-8">
+		<div class="panel panel-default">
+		  <div id="header" class="panel-heading"><h4>Panel heading without title</h4></div>
+		  <div id="content" class="panel-body">
+
+			 <div class="tab-content">
+		        <div class="tab-pane active" id="tab_a">
+      		      <h4>Saving data</h4>
+          		  <p></p>
+                </div>
+                <div class="tab-pane" id="tab_b">
+                  <h4>Pane B</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                     ac turpis egestas.</p>
+                </div>
+                <div class="tab-pane" id="tab_c">
+                  <h4>Pane C</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                      ac turpis egestas.</p>
+                </div>
+             </div><!-- tab content -->
+
+		  </div>
+		</div>        
+
+        <br>
+        <div id="trace" class="panel">&nbsp;</div>
+
+      <h3>oProp.scriptPath: <%= oProp.scriptPath %></h3>
+      <h3>oProp.htmlPath: <%= oProp.htmlPath %></h3>
+
+      </div>
+      
+      <div class="col-md-1">&nbsp;</div>
+      
+      
+      
+    </div>
+  </lp:content>
+
+
+  <lp:content name="pageLoaded">
+  
+    btNavHandler("index", menuHandler);
+    menuHandler("save");
+   
+    
+    function menuHandler(tabId) {
+      
+      var header = "";
+      var content = "";
+      
+      switch (tabId) {
+      
+         case "save":
+           break;
+
+         case "retrieve":
+           break;
+
+         case "delete":
+           break;
+      
+      }
+      
+      $("#header").html("<h3><em>" + tabId + "</em> Action</h3>");
+            
+    }
+
+    
+    // btNavHandler
+    // Handles a nav menu selection
+    //
+    function btNavHandler(ulId, callback) {
+
+      $('#' + ulId + ' a').click(function (e) {
+        e.preventDefault()
+        var target = $(this);
+        target.tab('show');
+        callback(target.attr('id'));
+     });
+    } 
+  </lp:content>
+  
+</lp:layout>
