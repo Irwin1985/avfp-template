@@ -1,4 +1,13 @@
-Hola Mundo desde ActiveVFP!<hr>
-Hora: <%=Transform(DateTime())%><br>
-<a href='clientes.avfp'>ver los clientes de la tabla cuenta</a><br> 
-Saludos a los foxeros de España!
+<h1>Hola Mundo desde ActiveVFP!</h1>
+<p>Fecha y Hora: <%=Transform(DateTime())%></p>
+<p>Este es el archivo 'default.avfp' de tu sitio web de ActiveVFP. Puedes comenzar a desarrollar tu aplicación web aquí.</p>
+<p>Si deseas realizar modificaciones en esta página, simplemente edita este archivo en la carpeta 'html' de tu sitio web.</p>
+<p>Ruta del archivo: <b><%=oProp.HtmlPath + 'default.avfp'%></b></p>
+
+<hr>
+
+<h1>Hello World from ActiveVFP!</h1>
+<p>Date and Time: <%=Transform(DateTime())%></p>
+<p>This is the 'default.avfp' file of your ActiveVFP website. You can start developing your web application here.</p>
+<p>If you want to make changes to this page, simply edit this file in the 'html' folder of your website.</p>
+<p>File Path: <b><%=oProp.HtmlPath + 'default.avfp'%></b></p>

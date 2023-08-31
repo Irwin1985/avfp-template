@@ -236,12 +236,7 @@ FUNCTION AVFPinit
 	* Set up data and html paths
 	************************************************************************
 	* Set Data and HTML paths (adjust per your needs as necessary)
-	SET EXCLUSIVE OFF
-	SET DELETED ON
-	SET POINT TO ','
-	SET SEPARATOR TO '.'
-	SET DEFA TO 'F:\Desarrollo\ActiveVFP\vfponline\'
-	oProp.HtmlPath	= 'F:\Desarrollo\ActiveVFP\vfponline\html\'
+	oProp.HtmlPath = ADDBS(oProp.AppStartPath) + 'html\'
 	RETURN
 ENDFUNC
 *********************
