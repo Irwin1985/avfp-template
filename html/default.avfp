@@ -1,7 +1,7 @@
 <h1>Hola Mundo desde ActiveVFP!</h1>
 <p>Fecha y Hora: <%=Transform(DateTime())%></p>
-<p>Este es el archivo 'default.avfp' de tu sitio web de ActiveVFP. Puedes comenzar a desarrollar tu aplicación web aquí.</p>
-<p>Si deseas realizar modificaciones en esta página, simplemente edita este archivo en la carpeta 'html' de tu sitio web.</p>
+<p>Este es el archivo 'default.avfp' de tu sitio web de ActiveVFP. Puedes comenzar a desarrollar tu aplicaci&oacute;n web aqu&iacute;.</p>
+<p>Si deseas realizar modificaciones en esta p&aacute;gina, simplemente edita este archivo en la carpeta 'html' de tu sitio web.</p>
 <p>Ruta del archivo: <b><%=oProp.HtmlPath + 'default.avfp'%></b></p>
 
 <hr>
